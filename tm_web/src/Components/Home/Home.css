@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.home {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+.header1 {
+  background: #DA8;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  z-index: 5;
+}
+
+/* CAROUSEL BACKGROUND */
+.carousel-bg {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.carousel-bg img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* DARK OVERLAY */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+}
+
+/* GRID SECTION */
+.grid-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  z-index: 2;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 220px);
+  gap: 30px;
+}
+
+/* CARDS */
+.card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 35px 20px;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card svg {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.card:hover {
+  transform: scale(1.07);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* FOOTER */
+.footer {
+  background: #DA8;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
