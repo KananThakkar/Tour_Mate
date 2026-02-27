@@ -70,7 +70,14 @@ const Home = () => {
           <div className="card"><FaMapMarkedAlt /><div>Map & Navigation</div></div>
           <div className="card"><FaTicketAlt /><div>Booking</div></div>
 
-          <div className="card"><FaSuitcaseRolling /><div>Travel Packages</div></div>
+                <div
+        className="card"
+         onClick={() => navigate("/home/travel-packages")}
+        style={{ cursor: "pointer" }}
+      >
+        <FaSuitcaseRolling />
+        <div>Travel Packages</div>
+      </div>
           <div className="card"><FaStar /><div>Reviews</div></div>
           <div className="card"><FaNewspaper /><div>Travel Articles</div></div>
 

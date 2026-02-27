@@ -4,6 +4,7 @@ import './App.css';
 import { Login } from './Components/Login/Login'
 import Home from './Components/Home/Home'
 import MonumentDetection from './Components/Home/MonumentDetection'
+import TravelPackages from "./Components/Home/TravelPackages"
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Login />} />
         <Route path="/home" element={<Home />} />
         <Route path="/home/monument-detection" element={<MonumentDetection />} />
+        <Route path="/home/travel-packages" element={<TravelPackages />} />
 
       </Routes>
     
