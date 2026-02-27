@@ -55,31 +55,26 @@ const Home = () => {
         <div className="grid">
 
           <div className="card"><FaRoute /><div>Pre‑Plan</div></div>
-          <div 
-  className="card"
-  onClick={() => navigate("/home/monument-detection")}
-  style={{ cursor: "pointer" }}
->
-  <FaLandmark />
-  <div>Monument Detection</div>
-</div>
+          <div className="card" onClick={() => navigate("/home/monument-detection")} style={{ cursor: "pointer" }}>
+            <FaLandmark />
+            <div>Monument Detection</div>
+          </div>
 
           <div className="card"><FaHeadphones /><div>Audio Tours</div></div>
-
           <div className="card"><FaRobot /><div>Chat with GuideAI</div></div>
           <div className="card"><FaMapMarkedAlt /><div>Map & Navigation</div></div>
           <div className="card"><FaTicketAlt /><div>Booking</div></div>
 
-                <div
-        className="card"
-         onClick={() => navigate("/home/travel-packages")}
-        style={{ cursor: "pointer" }}
-      >
-        <FaSuitcaseRolling />
-        <div>Travel Packages</div>
-      </div>
+          <div className="card" onClick={() => navigate("/home/travel-packages")} style={{ cursor: "pointer" }}>
+            <FaSuitcaseRolling />
+            <div>Travel Packages</div>
+          </div>
           <div className="card"><FaStar /><div>Reviews</div></div>
-          <div className="card"><FaNewspaper /><div>Travel Articles</div></div>
+
+          <div className="card" onClick={() => navigate("/home/travel-articles")} style={{ cursor: "pointer" }}>
+            <FaNewspaper />
+            <div>Travel Articles</div>
+          </div>
 
         </div>
       </div>
