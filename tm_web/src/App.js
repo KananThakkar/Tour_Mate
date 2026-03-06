@@ -6,7 +6,9 @@ import Home from './Components/Home/Home'
 import MonumentDetection from './Components/Home/MonumentDetection'
 import TravelPackages from "./Components/Home/TravelPackages"
 import TravelArticles from "./Components/Home/TravelArticles"
-import AudioTours from './Components/Home/AudioTours';
+import AudioTours from './Components/Home/AudioTours'
+import PrePlan from "./Components/Home/PrePlan"
+import DestinationDetails from "./Components/Home/DestinationDetails";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path="/home/travel-packages" element={<TravelPackages />} />
         <Route path="/home/travel-articles" element={<TravelArticles />} />
         <Route path="/home/audio-tours" element={<AudioTours />} />
+        <Route path="/home/pre-plan" element={<PrePlan />} />
+        <Route path="/destination/:id" element={<DestinationDetails />} />
       </Routes>
     
   );

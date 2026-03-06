@@ -54,7 +54,8 @@ const Home = () => {
       <div className="grid-section">
         <div className="grid">
 
-          <div className="card"><FaRoute /><div>Pre‑Plan</div></div>
+          <div className="card"onClick={() => navigate("/home/pre-plan")} style={{ cursor: "pointer" }}>
+            <FaRoute /><div>Pre‑Plan</div></div>
           <div className="card" onClick={() => navigate("/home/monument-detection")} style={{ cursor: "pointer" }}>
             <FaLandmark />
             <div>Monument Detection</div>
