@@ -60,7 +60,10 @@ const Home = () => {
             <div>Monument Detection</div>
           </div>
 
-          <div className="card"><FaHeadphones /><div>Audio Tours</div></div>
+          <div className="card" onClick={() => navigate("/home/audio-tours")} style={{ cursor: "pointer" }}>
+            <FaHeadphones />
+            <div>Audio Tours</div>
+          </div>
           <div className="card"><FaRobot /><div>Chat with GuideAI</div></div>
           <div className="card"><FaMapMarkedAlt /><div>Map & Navigation</div></div>
           <div className="card"><FaTicketAlt /><div>Booking</div></div>

@@ -91,7 +91,7 @@ const TravelArticles = () => {
           onClick={handleSearch}
           style={{
             padding: "10px 20px",
-            backgroundColor: "#007bff",
+            backgroundColor: "#DA8",
             color: "white",
             border: "none",
             borderRadius: "5px",
@@ -141,8 +141,15 @@ const TravelArticles = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: "#007bff", fontWeight: "bold" }}
-              >
-                Read More →
+              ><button 
+              style={{
+              padding: "10px 20px",
+            backgroundColor: "#DA8",
+            color: "white",
+            border: "none",
+            borderRadius: "5px",
+            cursor: "pointer",
+          }}>Read More</button>
               </a>
             </div>
           </div>

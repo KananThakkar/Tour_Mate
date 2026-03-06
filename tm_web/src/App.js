@@ -6,6 +6,7 @@ import Home from './Components/Home/Home'
 import MonumentDetection from './Components/Home/MonumentDetection'
 import TravelPackages from "./Components/Home/TravelPackages"
 import TravelArticles from "./Components/Home/TravelArticles"
+import AudioTours from './Components/Home/AudioTours';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/home/monument-detection" element={<MonumentDetection />} />
         <Route path="/home/travel-packages" element={<TravelPackages />} />
         <Route path="/home/travel-articles" element={<TravelArticles />} />
+        <Route path="/home/audio-tours" element={<AudioTours />} />
       </Routes>
     
   );
