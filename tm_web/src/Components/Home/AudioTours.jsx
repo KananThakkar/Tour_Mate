@@ -1,65 +1,158 @@
 import React from "react";
 import "./AudioTours.css";
+import { FaMapMarkerAlt, FaUserTie, FaWalking, FaClock } from "react-icons/fa";
+
+import qutub from "../Assets/monuments/qutub_minar.png";
+import redfort from "../Assets/monuments/redfort.png";
+import hampi from "../Assets/monuments/hampi.png";
+import ajanta from "../Assets/monuments/ajanta.png";
+import ellora from "../Assets/monuments/ellora.png";
+import konark from "../Assets/monuments/konark.png";
+import khajuraho from "../Assets/monuments/khajuraho.png";
+import sanchi from "../Assets/monuments/sanchi.png";
+import fatehpur from "../Assets/monuments/fatehpur.png";
 
 const tours = [
   {
-    name: "Taj Mahal Audio Tour",
+    id: 1,
+    name: "Taj Mahal",
     location: "Agra, India",
-    duration: "15 mins",
-    type: "Walking Tour",
     guide: "ASI Official Guide",
-    image: "https://upload.wikimedia.org/wikipedia/commons/d/da/Taj-Mahal.jpg",
-    audio: "/audio/tajmahal.mp3"
-  },
-  {
-    name: "Qutub Minar Tour",
-    location: "Delhi, India",
-    duration: "12 mins",
     type: "Walking Tour",
-    guide: "Historic India",
-    image: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Qutub_Minar_2011.jpg",
-    audio: "/audio/qutubminar.mp3"
+    duration: "15 mins",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/da/Taj-Mahal.jpg"
   },
   {
-    name: "Hampi Ruins Audio Guide",
+    id: 2,
+    name: "Qutub Minar",
+    location: "Delhi, India",
+    guide: "Historic India",
+    type: "Walking Tour",
+    duration: "12 mins",
+    image: qutub
+  },
+  {
+    id: 3,
+    name: "Red Fort",
+    location: "Delhi, India",
+    guide: "ASI Official Guide",
+    type: "Walking Tour",
+    duration: "14 mins",
+    image: redfort
+  },
+  {
+    id: 4,
+    name: "Hampi",
     location: "Karnataka, India",
+    guide: "Historic India",
+    type: "Walking Tour",
     duration: "18 mins",
-    type: "Heritage Walk",
-    guide: "ASI Guide",
-    image: "https://upload.wikimedia.org/wikipedia/commons/e/e2/Hampi_virupaksha_temple.jpg",
-    audio: "/audio/hampi.mp3"
+    image: hampi
+  },
+  {
+    id: 5,
+    name: "Ajanta Caves",
+    location: "Maharashtra, India",
+    guide: "ASI Official Guide",
+    type: "Walking Tour",
+    duration: "16 mins",
+    image: ajanta
+  },
+  {
+    id: 6,
+    name: "Ellora Caves",
+    location: "Maharashtra, India",
+    guide: "Historic India",
+    type: "Walking Tour",
+    duration: "17 mins",
+    image: ellora
+  },
+  {
+    id: 7,
+    name: "Konark Sun Temple",
+    location: "Odisha, India",
+    guide: "ASI Official Guide",
+    type: "Walking Tour",
+    duration: "13 mins",
+    image: konark
+  },
+  {
+    id: 8,
+    name: "Khajuraho Temples",
+    location: "Madhya Pradesh, India",
+    guide: "Historic India",
+    type: "Walking Tour",
+    duration: "15 mins",
+    image: khajuraho
+  },
+  {
+    id: 9,
+    name: "Sanchi Stupa",
+    location: "Madhya Pradesh, India",
+    guide: "ASI Official Guide",
+    type: "Walking Tour",
+    duration: "11 mins",
+    image: sanchi
+  },
+  {
+    id: 10,
+    name: "Fatehpur Sikri",
+    location: "Uttar Pradesh, India",
+    guide: "Historic India",
+    type: "Walking Tour",
+    duration: "14 mins",
+    image: fatehpur
   }
 ];
 
 function AudioTours() {
+
+  const startTour = (name) => {
+    console.log("Starting tour:", name);
+  };
+
   return (
-    <div className="audio-container">
+    <div className="tours-container">
 
-      <h1 className="audio-title">Indian Monument Audio Tours</h1>
+      <h1 className="page-title">Audio Tours</h1>
 
-      {tours.map((tour, index) => (
-        <div key={index} className="audio-card">
+      {tours.map((tour) => (
+        <div className="tour-card" key={tour.id}>
 
-          <div className="audio-details">
-            <h2>{tour.name}</h2>
+          <div className="tour-left">
 
-            <p><strong>Location:</strong> {tour.location}</p>
-            <p><strong>Type:</strong> {tour.type}</p>
-            <p><strong>Duration:</strong> {tour.duration}</p>
-            <p><strong>Guide:</strong> {tour.guide}</p>
+            <h2 className="tour-name">{tour.name}</h2>
 
-            <audio controls>
-              <source src={tour.audio} type="audio/mp3" />
-            </audio>
+            <div className="tour-row">
+              <span><FaMapMarkerAlt /> {tour.location}</span>
+              <span>|</span>
+              <span><FaUserTie /> {tour.guide}</span>
+              <span>|</span>
+              <span><FaWalking /> {tour.type}</span>
+              <span>|</span>
+              <span><FaClock /> {tour.duration}</span>
+            </div>
+
+            <button
+              className="tour-button"
+              onClick={() => startTour(tour.name)}
+            >
+              Start Tour
+            </button>
 
           </div>
 
-          <div className="audio-image">
-            <img src={tour.image} alt={tour.name} />
+          <div className="tour-right">
+            <img
+              src={tour.image}
+              alt={tour.name}
+              className="tour-image"
+            />
           </div>
 
         </div>
       ))}
+
     </div>
   );
 }
