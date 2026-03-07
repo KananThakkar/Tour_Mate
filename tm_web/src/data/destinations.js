@@ -59,7 +59,7 @@ hotels:[
 
 },
 {
-id:2,
+id:3,
 name:"Udaipur",
 image:"https://images.unsplash.com/photo-1599661046289-e31897846e41",
 
@@ -120,7 +120,7 @@ hotels:[
 },
 
 {
-id:3,
+id:2,
 name:"Darjeeling",
 image:"https://images.unsplash.com/photo-1597074866923-dc0589150358",
 
