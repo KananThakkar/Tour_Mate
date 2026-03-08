@@ -1,5 +1,6 @@
 import React from "react";
 import "./AudioTours.css";
+import { Link } from "react-router-dom";
 import { FaMapMarkerAlt, FaUserTie, FaWalking, FaClock } from "react-icons/fa";
 
 import qutub from "../Assets/monuments/qutub_minar.png";
@@ -132,13 +133,14 @@ function AudioTours() {
               <span>|</span>
               <span><FaClock /> {tour.duration}</span>
             </div>
-
+            <Link to="/audio-tours/:monumentId">
             <button
               className="tour-button"
               onClick={() => startTour(tour.name)}
             >
               Start Tour
             </button>
+            </Link>
 
           </div>
 
