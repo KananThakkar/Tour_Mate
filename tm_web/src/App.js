@@ -10,6 +10,8 @@ import AudioTours from './Components/Home/AudioTours'
 import PrePlan from "./Components/Home/PrePlan"
 import DestinationDetails from "./Components/Home/DestinationDetails";
 import TourPage from './Components/Home/TourPage';
+import Booking from './Components/Home/Booking';
+import ActivityDetails from "./Components/Home/ActivityDetails";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
         <Route path="/audio-tours/:monumentId" element={<TourPage />} />
         <Route path="/home/pre-plan" element={<PrePlan />} />
         <Route path="/destination/:id" element={<DestinationDetails />} />
+        <Route path="/home/booking" element={<Booking />} />
+        <Route path="/activity/:id" element={<ActivityDetails/>}/>
       </Routes>
     
   );

@@ -1,3 +1,10 @@
+import lehImg from "../Components/Assets/images/leh.png";
+import mountImg from "../Components/Assets/images/mount.png";
+import kodaiImg from "../Components/Assets/images/Kodaikanal.png";
+import ootyImg from "../Components/Assets/images/ooty.png";
+import varanasiImg from "../Components/Assets/images/varanasi.png";
+import ranthImg from "../Components/Assets/images/ranth.png";
+
 const destinations = [
 
 {
@@ -182,7 +189,7 @@ hotels:[
 {
 id:4,
 name:"Mount Abu",
-image:"https://images.unsplash.com/photo-1627037485369-51b41c4fca0c",
+image:mountImg,
 
 description:"The only hill station of Rajasthan surrounded by Aravalli hills.",
 
@@ -298,7 +305,7 @@ hotels:[
 {
 id:6,
 name:"Kodaikanal",
-image:"https://images.unsplash.com/photo-1627225924765-552d49cf47a3",
+image:kodaiImg,
 
 description:"A romantic hill station in Tamil Nadu known as Princess of Hill Stations.",
 
@@ -414,7 +421,7 @@ hotels:[
 {
 id:7,
 name:"Leh Ladakh",
-image:"https://images.unsplash.com/photo-1593186343127-7a1c3c1d40c2",
+image: lehImg,
 
 description:"A breathtaking high-altitude desert known for mountains, monasteries, and adventure.",
 
@@ -643,7 +650,7 @@ hotels:[
 {
 id:13,
 name:"Varanasi",
-image:"https://images.unsplash.com/photo-1561361513-2d000a50f0dc",
+image:varanasiImg,
 
 description:"Spiritual capital of India located on the banks of the Ganges.",
 
@@ -701,7 +708,7 @@ hotels:[
 {
 id:15,
 name:"Ooty",
-image:"https://images.unsplash.com/photo-1621693247917-7672a5c7b1e1",
+image:ootyImg,
 
 description:"Popular hill station in Tamil Nadu known for tea gardens.",
 
@@ -988,9 +995,9 @@ hotels:[
 },
 
 {
-id:17,
+id:16,
 name:"Ranthambore",
-image:"https://images.unsplash.com/photo-1557053964-937650b63311",
+image:ranthImg,
 
 description:"One of India's most famous national parks known for tiger safaris.",
 

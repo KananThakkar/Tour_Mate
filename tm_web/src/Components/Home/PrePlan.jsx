@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import "./PrePlan.css";
 import { Link } from "react-router-dom";    
+import lehImg from "../Assets/images/leh.png";
+import mountImg from "../Assets/images/mount.png";
+import kodaiImg from "../Assets/images/Kodaikanal.png";
+import ootyImg from "../Assets/images/ooty.png";
+import varanasiImg from "../Assets/images/varanasi.png";
+import ranthImg from "../Assets/images/ranth.png";
 const destinations = [
   {
     id: 1,
@@ -9,7 +15,7 @@ const destinations = [
     image:
       "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23",
     bestTime: "October - February",
-    days: 3,
+    days: 6,
     budget: "₹12,000",
   },
   {
@@ -26,8 +32,7 @@ const destinations = [
     id: 3,
     name: "Udaipur",
     type: "heritage",
-    image:
-      "https://images.unsplash.com/photo-1599661046827-dacde6976545",
+    image:  "https://images.unsplash.com/photo-1599661046289-e31897846e41",
     bestTime: "September - March",
     days: 2,
     budget: "₹8000",
@@ -48,7 +53,7 @@ const destinations = [
   type: "mountain",
   image: "https://images.unsplash.com/photo-1597074866923-dc0589150358",
   bestTime: "March - June",
-  days: 3,
+  days: 4,
   budget: "₹9000",
 },
 
@@ -58,7 +63,7 @@ const destinations = [
   type: "mountain",
   image: "https://images.unsplash.com/photo-1622308644420-b20142dc993c",
   bestTime: "October - June",
-  days: 3,
+  days: 6,
   budget: "₹8500",
 },
 
@@ -66,7 +71,7 @@ const destinations = [
   id: 7,
   name: "Leh Ladakh",
   type: "adventure",
-  image: "https://images.unsplash.com/photo-1593186343127-7a1c3c1d40c2",
+  image: lehImg ,
   bestTime: "May - September",
   days: 5,
   budget: "₹20000",
@@ -76,7 +81,7 @@ const destinations = [
   id: 4,
   name: "Mount Abu",
   type: "mountain",
-  image: "https://images.unsplash.com/photo-1627037485369-51b41c4fca0c",
+  image: mountImg,
   bestTime: "October - March",
   days: 2,
   budget: "₹7000",
@@ -95,10 +100,10 @@ const destinations = [
 {
   id: 6,
   name: "Kodaikanal",
-  type: "mountain",
-  image: "https://images.unsplash.com/photo-1627225924765-552d49cf47a3",
+  type: "mountain", 
+  image: kodaiImg,
   bestTime: "September - May",
-  days: 3,
+  days: 5,
   budget: "₹9000",
 },
 
@@ -126,7 +131,7 @@ const destinations = [
   id: 13,
   name: "Varanasi",
   type: "spiritual",
-  image: "https://images.unsplash.com/photo-1561361513-2d000a50f0dc",
+  image: varanasiImg,
   bestTime: "October - March",
   days: 2,
   budget: "₹6000",
@@ -146,9 +151,9 @@ const destinations = [
   id: 15,
   name: "Ooty",
   type: "mountain",
-  image: "https://images.unsplash.com/photo-1621693247917-7672a5c7b1e1",
+  image: ootyImg,
   bestTime: "October - June",
-  days: 3,
+  days: 5,
   budget: "₹9000",
 },
 
@@ -156,9 +161,9 @@ const destinations = [
   id: 16,
   name: "Ranthambore",
   type: "wildlife",
-  image: "https://images.unsplash.com/photo-1557053964-937650b63311",
+  image: ranthImg,
   bestTime: "October - June",
-  days: 2,
+  days: 3,
   budget: "₹11000",
 },
 
@@ -241,8 +246,8 @@ function PrePlan() {
           <option value="heritage">Heritage</option>
           <option value="adventure">Adventure</option>
           <option value="trekking">Trekking</option>
-          <option value="nature">Nature</option>
-          <option value="resort">Resort</option>
+          {/* <option value="nature">Nature</option> */}
+          {/* <option value="resort">Resort</option> */}
           <option value="wildlife">Wildlife</option>
           <option value="spiritual">Spiritual</option>
         </select>
@@ -252,56 +257,81 @@ function PrePlan() {
         </button>
 
       </div>
-      <h2 className="popular-title">Popular Destinations</h2>
+      {results.length > 0 && (
+
+<div className="results-section">
+
+<h2>{results.length} Destinations Found</h2>
+
+<div className="results-grid">
+
+{results.map((place)=>(
+<div className="destination-card" key={place.id}>
+
+<img src={place.image} alt={place.name} />
+
+<h3>{place.name}</h3>
+
+<p>{place.description}</p>
+
+<p><b>Days:</b> {place.days}</p>
+
+<p><b>Best Time:</b> {place.bestTime}</p>
+
+<Link to={`/destination/${place.id}`}>
+<button className="see-more-btn">
+See More
+</button>
+</Link>
+
+</div>
+))}
+
+</div>
+
+</div>
+
+)}
+
+{/* Popular Destinations */}
+
+{results.length === 0 && (
+
+<div className="popular-section">
+
+<h2>Popular Destinations</h2>
 
 <div className="popular-grid">
 
 <div className="popular-card">
-<img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23"/>
+<img src="https://images.unsplash.com/photo-1605649487212-47bdab064df7" alt="Manali"/>
 <h3>Manali</h3>
 </div>
 
-<div className="popular-card">
-<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"/>
+<div className="popular-card">  
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Goa"/>
 <h3>Goa</h3>
 </div>
 
 <div className="popular-card">
-<img src="https://images.unsplash.com/photo-1599661046827-dacde6976545"/>
-<h3>Jaipur</h3>
+<img src="https://images.unsplash.com/photo-1599661046289-e31897846e41" alt="Udaipur"/>
+<h3>Udaipur</h3>
 </div>
 
 <div className="popular-card">
-<img src="https://images.unsplash.com/photo-1593186343127-7a1c3c1d40c2"/>
+<img src={lehImg} alt="Leh Ladakh"/>
 <h3>Leh Ladakh</h3>
 </div>
- <h2 className=""> Destinations You Might Like </h2>
+
 </div>
-      <div className="result-grid">
 
-        {results.map((place) => (
-          <div className="card" key={place.id}>
+</div>
 
-            <img src={place.image} alt={place.name} />
+)}
 
-            <h3>{place.name}</h3>
+</div>
+);
 
-            <p><b>Best Time:</b> {place.bestTime}</p>
-            <p><b>Days:</b> {place.days}</p>
-            <p><b>Budget:</b> {place.budget}</p>
-
-            <Link to={`/destination/${place.id}`}>
-            <button className="details-btn">See More</button>
-            </Link>
-
-          </div>
-        ))}
-
-      </div>
-
-    </div>
-    
-  );
 }
 
 export default PrePlan;
