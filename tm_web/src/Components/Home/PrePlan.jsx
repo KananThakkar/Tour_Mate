@@ -252,7 +252,31 @@ function PrePlan() {
         </button>
 
       </div>
+      <h2 className="popular-title">Popular Destinations</h2>
 
+<div className="popular-grid">
+
+<div className="popular-card">
+<img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23"/>
+<h3>Manali</h3>
+</div>
+
+<div className="popular-card">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"/>
+<h3>Goa</h3>
+</div>
+
+<div className="popular-card">
+<img src="https://images.unsplash.com/photo-1599661046827-dacde6976545"/>
+<h3>Jaipur</h3>
+</div>
+
+<div className="popular-card">
+<img src="https://images.unsplash.com/photo-1593186343127-7a1c3c1d40c2"/>
+<h3>Leh Ladakh</h3>
+</div>
+ <h2 className=""> Destinations You Might Like </h2>
+</div>
       <div className="result-grid">
 
         {results.map((place) => (
@@ -276,6 +300,7 @@ function PrePlan() {
       </div>
 
     </div>
+    
   );
 }
 
