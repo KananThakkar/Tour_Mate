@@ -17,7 +17,7 @@ const TourPage = () => {
       <h1 className="tour-title">{monument.name}</h1>
 
       <div className="image-gallery">
-        {monument.images.map((img, index) => (
+        {monument.images?.map((img, index) => (
           <img key={index} src={img} alt={monument.name} />
         ))}
       </div>

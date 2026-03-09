@@ -4,6 +4,8 @@ function MonumentDetection() {
       <h2 style={{ textAlign: "center" }}>Monument Detection</h2>
       <iframe
         src="https://KananThakkar-indian-monuments.hf.space"
+        allow="camera; microphone"
+ 
         width="100%"
         height="600px"
         style={{ border: "none" }}

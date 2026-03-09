@@ -1,5 +1,6 @@
+
 export const monuments = {
-  tajmahal: {
+  1: {
     name: "Taj Mahal",
     description:
       "The Taj Mahal in Agra was built by Mughal emperor Shah Jahan in memory of his wife Mumtaz Mahal. It is one of the Seven Wonders of the World and is famous for its white marble architecture.",

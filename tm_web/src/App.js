@@ -23,7 +23,7 @@ function App() {
         <Route path="/home/travel-packages" element={<TravelPackages />} />
         <Route path="/home/travel-articles" element={<TravelArticles />} />
         <Route path="/home/audio-tours" element={<AudioTours />} />
-        <Route path="/audio-tours/:monumentId" element={<TourPage />} />
+        <Route path="/tour/:monumentId" element={<TourPage />} />
         <Route path="/home/pre-plan" element={<PrePlan />} />
         <Route path="/destination/:id" element={<DestinationDetails />} />
         <Route path="/home/booking" element={<Booking />} />

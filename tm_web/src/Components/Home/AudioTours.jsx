@@ -133,10 +133,10 @@ function AudioTours() {
               <span>|</span>
               <span><FaClock /> {tour.duration}</span>
             </div>
-            <Link to="/audio-tours/:monumentId">
+            <Link key={tour.name} to={`/tour/${tour.id}`}>
             <button
               className="tour-button"
-              onClick={() => startTour(tour.name)}
+              
             >
               Start Tour
             </button>

@@ -1,7 +1,7 @@
 .tour-container {
   max-width: 1000px;
   margin: auto;
-  padding: 30px;
+  padding: 0px;
   font-family: Arial, sans-serif;
 }
 
@@ -19,8 +19,8 @@
 }
 
 .image-gallery img {
-  width: 300px;
-  height: 200px;
+  width: 500px;
+  height: 300px;
   object-fit: cover;
   border-radius: 10px;
   transition: transform 0.3s;
