@@ -89,3 +89,55 @@
     font-weight: 700;
     cursor: pointer;
 }
+
+/* TABLET */
+
+@media (max-width:992px){
+
+.container{
+  width:80%;
+}
+
+.input{
+  width:100%;
+}
+
+.input input{
+  width:100%;
+}
+
+}
+
+/* MOBILE */
+
+@media (max-width:600px){
+
+.container{
+  width:90%;
+  margin-top:30px;
+}
+
+.text{
+  font-size:32px;
+}
+
+.submit-container{
+  flex-direction:column;
+  gap:20px;
+}
+
+.submit,
+.gray{
+  width:100%;
+}
+
+.input{
+  width:100%;
+}
+
+.input input{
+  width:100%;
+  font-size:16px;
+}
+
+}

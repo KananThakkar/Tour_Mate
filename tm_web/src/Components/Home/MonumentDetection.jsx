@@ -5,10 +5,7 @@ function MonumentDetection() {
       <iframe
         src="https://KananThakkar-indian-monuments.hf.space"
         allow="camera; microphone"
- 
-        width="100%"
-        height="600px"
-        style={{ border: "none" }}
+        style={{ border:"none", width:"100%", height:"80vh" }}
         title="Monument Detection"
       />
     </div>

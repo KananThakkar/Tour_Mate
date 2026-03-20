@@ -134,3 +134,29 @@ cursor:pointer;
 .hotel-card button:hover{
 background:#e96b10;
 }
+
+@media (max-width:768px){
+
+.hero-section{
+height:250px;
+}
+
+.hero-text{
+left:20px;
+bottom:20px;
+padding:15px;
+}
+
+.hero-text h1{
+font-size:28px;
+}
+
+}
+
+@media (max-width:480px){
+
+.details-page{
+padding:20px;
+}
+
+}

@@ -89,3 +89,47 @@ body {
   text-align: center;
   padding: 30px;
 }
+
+/* TABLET */
+@media (max-width:1024px){
+
+.grid{
+grid-template-columns:repeat(2,200px);
+gap:25px;
+}
+
+}
+
+/* MOBILE */
+@media (max-width:768px){
+
+.grid{
+grid-template-columns:1fr;
+gap:20px;
+}
+
+.card{
+padding:25px 15px;
+font-size:14px;
+}
+
+.header1{
+font-size:14px;
+padding:8px;
+}
+
+}
+
+/* SMALL MOBILE */
+
+@media (max-width:480px){
+
+.grid-section{
+padding:20px 10px;
+}
+
+.card svg{
+font-size:32px;
+}
+
+}

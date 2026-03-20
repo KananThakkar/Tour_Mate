@@ -98,3 +98,23 @@
   font-size: 18px;
   color: gray;
 }
+
+@media (max-width:768px){
+
+.search-bar{
+width:90%;
+}
+
+.package-card{
+width:90%;
+}
+
+}
+
+@media (max-width:480px){
+
+.title{
+font-size:26px;
+}
+
+}
