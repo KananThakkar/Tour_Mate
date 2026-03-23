@@ -7,6 +7,13 @@ import kodaiImg from "../Assets/images/Kodaikanal.png";
 import ootyImg from "../Assets/images/ooty.png";
 import varanasiImg from "../Assets/images/varanasi.png";
 import ranthImg from "../Assets/images/ranth.png";
+import auliImg from "../Assets/images/auli.png";
+import gokaranaImg from "../Assets/images/gokarana.png";
+import hampiImg from "../Assets/images/hampi.png";
+import jaipurImg from "../Assets/images/jaipur.png";
+import mahaImg from "../Assets/images/mahabali.png";
+
+
 const destinations = [
   {
     id: 1,
@@ -121,7 +128,7 @@ const destinations = [
   id: 12,
   name: "Jaipur",
   type: "heritage",
-  image: "https://images.unsplash.com/photo-1599661046827-dacde6976545",
+  image: jaipurImg,
   bestTime: "October - March",
   days: 2,
   budget: "₹8000",
@@ -171,7 +178,7 @@ const destinations = [
   id: 17,
   name: "Auli",
   type: "adventure",
-  image: "https://images.unsplash.com/photo-1613553421149-3dce980c9a4c",
+  image: auliImg,
   bestTime: "December - March",
   days: 3,
   budget: "₹12000",
@@ -181,7 +188,7 @@ const destinations = [
   id: 18,
   name: "Mahabalipuram",
   type: "heritage",
-  image: "https://images.unsplash.com/photo-1588413335653-94b37c9b84a7",
+  image: mahaImg,
   bestTime: "November - February",
   days: 2,
   budget: "₹7500",
@@ -191,7 +198,7 @@ const destinations = [
   id: 19,
   name: "Hampi",
   type: "heritage",
-  image: "https://images.unsplash.com/photo-1587135991058-8816c0c4f7f0",
+  image: hampiImg,
   bestTime: "October - February",
   days: 3,
   budget: "₹8000",
@@ -201,7 +208,7 @@ const destinations = [
   id: 20,
   name: "Gokarna",
   type: "beach",
-  image: "https://images.unsplash.com/photo-1590523741831-ab7e8b833b92",
+  image: gokaranaImg,
   bestTime: "October - March",
   days: 3,
   budget: "₹9000",

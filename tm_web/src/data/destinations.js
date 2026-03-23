@@ -4,6 +4,12 @@ import kodaiImg from "../Components/Assets/images/Kodaikanal.png";
 import ootyImg from "../Components/Assets/images/ooty.png";
 import varanasiImg from "../Components/Assets/images/varanasi.png";
 import ranthImg from "../Components/Assets/images/ranth.png";
+import auliImg from "../Components/Assets/images/auli.png";
+import gokaranaImg from "../Components/Assets/images/gokarana.png";
+import hampiImg from "../Components/Assets/images/hampi.png";
+import jaipurImg from "../Components/Assets/images/jaipur.png";
+import mahaImg from "../Components/Assets/images/mahabali.png";
+
 
 const destinations = [
 
@@ -592,7 +598,7 @@ hotels:[
 {
 id:12,
 name:"Jaipur",
-image:"https://images.unsplash.com/photo-1599661046827-dacde6976545",
+image:jaipurImg,
 
 description:"The Pink City of India known for its royal palaces and forts.",
 
@@ -823,7 +829,7 @@ hotels:[
 {
 id:19,
 name:"Hampi",
-image:"https://images.unsplash.com/photo-1587135991058-8816c0c4f7f0",
+image:hampiImg,
 
 description:"Ancient village in Karnataka known for ruins of the Vijayanagara Empire.",
 
@@ -881,7 +887,7 @@ hotels:[
 {
 id:17,
 name:"Auli",
-image:"https://images.unsplash.com/photo-1613553421149-3dce980c9a4c",
+image:auliImg,
 
 description:"Auli is a famous ski destination in Uttarakhand with Himalayan views.",
 
@@ -1054,7 +1060,7 @@ hotels:[
 {
 id:18,
 name:"Mahabalipuram",
-image:"https://images.unsplash.com/photo-1588413335653-94b37c9b84a7",
+image:mahaImg,
 
 description:"Historic coastal town in Tamil Nadu famous for ancient rock-cut temples and UNESCO heritage monuments.",
 
@@ -1112,7 +1118,7 @@ hotels:[
 {
 id:20,
 name:"Gokarna",
-image:"https://images.unsplash.com/photo-1590523741831-ab7e8b833b92",
+image:gokaranaImg,
 
 description:"Peaceful beach town in Karnataka known for beautiful beaches and spiritual temples.",
 

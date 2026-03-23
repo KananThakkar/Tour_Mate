@@ -28,6 +28,7 @@ function App() {
         <Route path="/destination/:id" element={<DestinationDetails />} />
         <Route path="/home/booking" element={<Booking />} />
         <Route path="/activity/:id" element={<ActivityDetails/>}/>
+        <Route path="/home/audio-maps" element={<maps_navigation />} />
       </Routes>
     
   );

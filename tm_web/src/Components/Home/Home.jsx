@@ -66,7 +66,10 @@ const Home = () => {
             <div>Audio Tours</div>
           </div>
           <div className="card"><FaRobot /><div>Chat with GuideAI</div></div>
-          <div className="card"><FaMapMarkedAlt /><div>Map & Navigation</div></div>
+          <div className="card" onClick={() => navigate("/home/maps")} style={{ cursor: "pointer" }}>
+            <FaTicketAlt /><FaMapMarkedAlt />
+            <div>Map & Navigation</div>
+            </div>
           <div className="card" onClick={() => navigate("/home/booking")} style={{ cursor: "pointer" }}>
             <FaTicketAlt />
             <div>Booking</div>
