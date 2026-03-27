@@ -15,6 +15,8 @@ import DestinationDetails from "./Components/Home/DestinationDetails";
 import TourPage from './Components/Home/TourPage';
 import Booking from './Components/Home/Booking';
 import ActivityDetails from "./Components/Home/ActivityDetails";
+import "leaflet/dist/leaflet.css";
+import Reviews from "./Components/Home/Reviews";
 
 function App() {
   return (
@@ -34,6 +36,7 @@ function App() {
         <Route path="/home/booking" element={<Booking />} />
         <Route path="/activity/:id" element={<ActivityDetails/>}/>
         <Route path="/home/maps-navigation" element={<MapsNavigation />} />
+        <Route path="/reviews" element={<Reviews />} />
       </Routes>
     
   );

@@ -1,0 +1,102 @@
+.reviews-page {
+  padding: 40px;
+  text-align: center;
+  background: #f5f7fa;
+  min-height: 100vh;
+}
+
+/* TITLE */
+.reviews-page h1 {
+  margin-bottom: 20px;
+}
+
+/* SEARCH + FILTER */
+.review-controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.review-controls input,
+.review-controls select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* CARDS */
+.reviews-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.review-card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.review-card .place {
+  font-weight: bold;
+  color: #ff6600;
+}
+
+.review-card .stars {
+  margin: 5px 0;
+}
+
+.like-btn {
+  margin-top: 10px;
+  padding: 6px 12px;
+  border: none;
+  background: #eee;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.like-btn:hover {
+  background: #ddd;
+}
+
+/* FORM */
+.review-form {
+  margin-top: 50px;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.review-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.review-form input,
+.review-form select,
+.review-form textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.review-form button {
+  background: #ff6600;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.review-form button:hover {
+  background: #e65c00;
+}
