@@ -1,0 +1,42 @@
+.map-page {
+  padding: 15px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.btn-container button {
+  padding: 10px 15px;
+  background: #ff7a18;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.map-container {
+  height: 500px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* 📱 Mobile */
+@media (max-width: 768px) {
+  .map-container {
+    height: 400px;
+  }
+
+  .btn-container button {
+    flex: 1;
+    font-size: 14px;
+  }
+}

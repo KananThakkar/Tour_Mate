@@ -29,6 +29,7 @@ body {
 }
 
 .carousel-bg img {
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
@@ -40,7 +41,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.55);
+  
 }
 
 /* GRID SECTION */
@@ -59,11 +60,12 @@ body {
   gap: 30px;
 }
 
-/* CARDS */
-.card {
-  background: rgba(255, 255, 255, 0.2);
+/* home-cardS */
+.home-card {
+  background: rgba(221, 170, 136, 0.5);
   backdrop-filter: blur(10px);
   border-radius: 15px;
+  border: 1px solid #DA8;
   padding: 35px 20px;
   text-align: center;
   color: white;
@@ -72,14 +74,14 @@ body {
   cursor: pointer;
 }
 
-.card svg {
+.home-card svg {
   font-size: 40px;
   margin-bottom: 15px;
 }
 
-.card:hover {
+.home-card:hover {
   transform: scale(1.07);
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(221, 170, 136, 0.6);
 }
 
 /* FOOTER */
@@ -91,45 +93,32 @@ body {
 }
 
 /* TABLET */
-@media (max-width:1024px){
-
-.grid{
-grid-template-columns:repeat(2,200px);
-gap:25px;
-}
-
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(3, 180px);
+  }
 }
 
 /* MOBILE */
-@media (max-width:768px){
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* 🔥 2 buttons per row */
+    gap: 15px;
+  }
 
-.grid{
-grid-template-columns:1fr;
-gap:20px;
-}
+  .home-card {
+    padding: 20px 10px;
+    font-size: 14px;
+  }
 
-.card{
-padding:25px 15px;
-font-size:14px;
-}
-
-.header1{
-font-size:14px;
-padding:8px;
-}
-
+  .home-card svg {
+    font-size: 28px;
+  }
 }
 
 /* SMALL MOBILE */
-
-@media (max-width:480px){
-
-.grid-section{
-padding:20px 10px;
-}
-
-.card svg{
-font-size:32px;
-}
-
+@media (max-width: 400px) {
+  .grid {
+    grid-template-columns: 1fr; /* fallback for very small screens */
+  }
 }

@@ -54,34 +54,37 @@ const Home = () => {
       <div className="grid-section">
         <div className="grid">
 
-          <div className="card"onClick={() => navigate("/home/pre-plan")} style={{ cursor: "pointer" }}>
+          <div className="home-card" onClick={() => navigate("/home/pre-plan")} style={{ cursor: "pointer" }}>
             <FaRoute /><div>Pre‑Plan</div></div>
-          <div className="card" onClick={() => navigate("/home/monument-detection")} style={{ cursor: "pointer" }}>
+          <div className="home-card" onClick={() => navigate("/home/monument-detection")} style={{ cursor: "pointer" }}>
             <FaLandmark />
             <div>Monument Detection</div>
           </div>
 
-          <div className="card" onClick={() => navigate("/home/audio-tours")} style={{ cursor: "pointer" }}>
+          <div className="home-card" onClick={() => navigate("/home/audio-tours")} style={{ cursor: "pointer" }}>
             <FaHeadphones />
             <div>Audio Tours</div>
           </div>
-          <div className="card"><FaRobot /><div>Chat with GuideAI</div></div>
-          <div className="card" onClick={() => navigate("/home/maps")} style={{ cursor: "pointer" }}>
-            <FaTicketAlt /><FaMapMarkedAlt />
+          <div className="home-card" onClick={() => navigate("/home/chat-ai")} style={{ cursor: "pointer" }}>
+            <FaRobot />
+            <div>Chat with GuideAI</div>
+          </div>
+          <div className="home-card" onClick={() => navigate("/home/maps-navigation")} style={{ cursor: "pointer" }}>
+            <FaMapMarkedAlt />
             <div>Map & Navigation</div>
             </div>
-          <div className="card" onClick={() => navigate("/home/booking")} style={{ cursor: "pointer" }}>
+          <div className="home-card" onClick={() => navigate("/home/booking")} style={{ cursor: "pointer" }}>
             <FaTicketAlt />
             <div>Booking</div>
           </div>
 
-          <div className="card" onClick={() => navigate("/home/travel-packages")} style={{ cursor: "pointer" }}>
+          <div className="home-card" onClick={() => navigate("/home/travel-packages")} style={{ cursor: "pointer" }}>
             <FaSuitcaseRolling />
             <div>Travel Packages</div>
           </div>
-          <div className="card"><FaStar /><div>Reviews</div></div>
+          <div className="home-card"><FaStar /><div>Reviews</div></div>
 
-          <div className="card" onClick={() => navigate("/home/travel-articles")} style={{ cursor: "pointer" }}>
+          <div className="home-card" onClick={() => navigate("/home/travel-articles")} style={{ cursor: "pointer" }}>
             <FaNewspaper />
             <div>Travel Articles</div>
           </div>
