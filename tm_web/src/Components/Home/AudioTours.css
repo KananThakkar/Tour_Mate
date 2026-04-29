@@ -26,10 +26,12 @@
 .tour-left{
   display:flex;
   flex-direction:column;
+  align-items: flex-start;
   gap:12px;
 }
 
 .tour-name{
+
   margin-top: 0px;
   font-size:30px;
   font-weight:600;
@@ -117,7 +119,17 @@ font-size:24px;
 }
 
 .tour-row{
-font-size:16px;
+  display:flex;
+  align-items:center;
+  gap:5px;
+  font-size:12px;
+  color:#444;
+}
+
+.tour-row span{
+  display:flex;
+  align-items:center;
+  gap:5px;
 }
 
 }

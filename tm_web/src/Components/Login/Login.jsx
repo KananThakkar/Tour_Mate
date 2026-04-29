@@ -160,17 +160,17 @@ export const Login = () => {
 
       <div className="submit-container">
         <div
-          className={action === "Login" ? "submit gray" : "submit"}
+          className={action === "Login" ? "submit gray" : "submit gray"}
           onClick={() => setAction("Sign Up")}
         >
-          Sign Up
+          {action === "Sign Up" ? "Login" : "Sign Up"}
         </div>
 
         <div
-          className={action === "Sign Up" ? "submit gray" : "submit"}
+          className={action === "Sign Up" ? "submit" : "submit"}
           onClick={action === "Login" ? handleLogin : handleSignup}
         >
-          {action === "Login" ? "Login" : "Register"}
+          {action === "Login" ? "Login" : "Sign Up"}
         </div>
       </div>
     </div>

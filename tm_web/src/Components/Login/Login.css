@@ -158,9 +158,9 @@
 
 /* ALIGN FORGOT PASSWORD */
 .forgot-password {
-  padding-left: 0;
+  padding-left: 0px;
   text-align: left;
-  width: 480px;
+  width: 590px;
   margin: 15px auto 0;
 }
 

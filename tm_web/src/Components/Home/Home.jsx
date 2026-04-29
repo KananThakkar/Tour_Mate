@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Carousel } from "react-responsive-carousel";
 import {
   FaRoute,
+  FaRegUser,
   FaLandmark,
   FaHeadphones,
   FaRobot,
@@ -23,6 +24,14 @@ const Home = () => {
       {/* HEADER (same as before) */}
       <header className="header1">
         <h1>Tour Mate</h1>
+        {/*<FaRegUser />*/}
+        <section id="profile-block">
+          <p id="close">X</p>
+          <div id="uname"></div>
+          <div>
+            <button id="lbtn">Logout</button>
+          </div>
+        </section>
       </header>
 
       {/* BACKGROUND CAROUSEL */}
