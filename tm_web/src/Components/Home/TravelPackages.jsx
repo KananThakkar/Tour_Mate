@@ -6,6 +6,11 @@ import mountImg from "../Assets/images/mount.png";
 import kodaiImg from "../Assets/images/Kodaikanal.png";
 import jaipurImg from "../Assets/images/jaipur.png";
 import rishi from "../Assets/images/rishi.png";
+import mahaImg from "../Assets/images/maha.png";
+import goldenImg from "../Assets/images/golden.png";
+import kashImg from "../Assets/images/kash.png";
+import coorgImg from "../Assets/images/coorg.png";
+import shimlaImg from "../Assets/images/shimla.png";
 
 const packagesData = [
   {
@@ -22,7 +27,20 @@ const packagesData = [
     reviews: "4.5 (120 reviews)",
     link: "https://www.makemytrip.com/"
   },
-  
+  {
+    id: 2,
+    name: "Shimla - Manali Tour",
+    location: "shimla manali",
+    image:
+      shimlaImg,
+    description:
+      "Experience snow mountains, valleys and scenic beauty.",
+    bestTime: "December - February",
+    days: "5 Days",
+    price: "₹15,999",
+    reviews: "4.7 (210 reviews)",
+    link: "https://www.yatra.com/"
+  },
   {
     id: 3,
     name: "Kerala Backwaters",
@@ -132,18 +150,18 @@ const packagesData = [
     reviews: "4.8 (110 reviews)",
     link: "https://www.thomascook.in/"
   },
-  // {
-  //   id: 12,
-  //   name: "Kashmir Valley",
-  //   location: "jammu & kashmir",
-  //   image: "https://images.unsplash.com/photo-1593691509543-c55fb32a3fbc",
-  //   description: "Paradise on earth with snow peaks and gardens.",
-  //   bestTime: "March - October",
-  //   days: "5 Days",
-  //   price: "₹19,499",
-  //   reviews: "4.9 (140 reviews)",
-  //   link: "https://www.makemytrip.com/"
-  // },
+  {
+     id: 12,
+     name: "Kashmir Valley",
+     location: "jammu & kashmir",
+     image: kashImg,
+     description: "Paradise on earth with snow peaks and gardens.",
+     bestTime: "March - October",
+     days: "5 Days",
+     price: "₹19,499",
+     reviews: "4.9 (140 reviews)",
+     link: "https://www.makemytrip.com/"
+  },
   {
     id: 13,
     name: "Hampi Heritage Tour",
@@ -180,23 +198,23 @@ const packagesData = [
     reviews: "4.5 (88 reviews)",
     link: "https://www.thomascook.in/"
   },
-  // {
-  //   id: 16,
-  //   name: "Coorg Nature Escape",
-  //   location: "karnataka",
-  //   image: "https://images.unsplash.com/photo-1603088549155-6ae6fdb2c7d2",
-  //   description: "Coffee plantations and waterfalls.",
-  //   bestTime: "October - May",
-  //   days: "3 Days",
-  //   price: "₹11,499",
-  //   reviews: "4.4 (73 reviews)",
-  //   link: "https://www.yatra.com/"
-  // },
+  {
+     id: 16,
+     name: "Coorg Nature Escape",
+     location: "karnataka",
+     image: coorgImg,
+     description: "Coffee plantations and waterfalls.",
+     bestTime: "October - May",
+     days: "3 Days",
+     price: "₹11,499",
+     reviews: "4.4 (73 reviews)",
+     link: "https://www.yatra.com/"
+  },
   {
     id: 17,
     name: "Amritsar Golden Temple",
     location: "punjab",
-    image: "https://images.unsplash.com/photo-1570168007204-dfb528c6958f",
+    image: goldenImg,
     description: "Visit Golden Temple and Wagah Border.",
     bestTime: "October - March",
     days: "2 Days",
@@ -208,7 +226,7 @@ const packagesData = [
     id: 18,
     name: "Mahabalipuram Temples",
     location: "tamil nadu",
-    image: "https://images.unsplash.com/photo-1603262110263-fb0112e7cc33",
+    image: mahaImg,
     description: "Ancient shore temples and carvings.",
     bestTime: "November - February",
     days: "2 Days",
@@ -239,7 +257,19 @@ const packagesData = [
     price: "₹9,999",
     reviews: "4.3 (64 reviews)",
     link: "https://www.yatra.com/"
-  }
+  },
+  {
+  id: 21,
+  name: "Spiti Valley Expedition",
+  location: "himachal pradesh",
+  image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23",
+  description: "Explore cold deserts, monasteries and breathtaking Himalayan views.",
+  bestTime: "May - October",
+  days: "6 Days",
+  price: "₹22,999",
+  reviews: "4.8 (125 reviews)",
+  link: "https://www.thomascook.in/"
+}
   
 ];
 

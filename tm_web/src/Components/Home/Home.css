@@ -10,32 +10,39 @@ body {
   flex-direction: column;
 }
 
-/* HEADER */
+/* 🔥 HEADER (FIXED) */
 .header1 {
   background: #DA8;
   color: white;
-  padding: 5px;
-  z-index: 5;
+  padding: 15px 15px;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  height: 70px;
-}
-.header1>h1{
-  padding-left: 610px;
-}
-#user{
-  cursor: pointer;
-  background-color: #DA8;
-  border: #DA8;
-  color: white;
-  font-size: 30px;
-  padding-left: 570px;
+  position: relative;
 }
 
-/* CAROUSEL BACKGROUND */
+/* 🎯 CENTER TITLE */
+.header1 h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-size: 22px;
+}
+
+/* 👤 USER ICON RIGHT */
+#user {
+  margin-left: auto;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+}
+
+/* 🔥 BACKGROUND */
 .carousel-bg {
   position: fixed;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
@@ -44,53 +51,43 @@ body {
 
 .carousel-bg img {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   object-fit: cover;
 }
 
-/* DARK OVERLAY */
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  
-}
-
-/* GRID SECTION */
+/* 🔥 GRID SECTION */
 .grid-section {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 0;
-  z-index: 2;
+  padding: 20px;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 220px);
-  gap: 30px;
+  grid-template-columns: repeat(3, 200px);
+  gap: 40px;
+  justify-content: center;
 }
 
-/* home-cardS */
+/* 🔥 CARDS */
 .home-card {
   background: rgba(221, 170, 136, 0.5);
   backdrop-filter: blur(10px);
   border-radius: 15px;
   border: 1px solid #DA8;
-  padding: 35px 20px;
+  padding: 25px 15px;
   text-align: center;
   color: white;
-  font-size: 16px;
+  font-size: 15px;
   transition: 0.3s;
   cursor: pointer;
 }
 
 .home-card svg {
-  font-size: 40px;
-  margin-bottom: 15px;
+  font-size: 35px;
+  margin-bottom: 10px;
 }
 
 .home-card:hover {
@@ -98,87 +95,112 @@ body {
   background: rgba(221, 170, 136, 0.6);
 }
 
-#profile-block{
-    width: 200px;
-    height: 150px;
-    position: fixed;
-    top: 11vh;
-    right: 0;
-    background-color: #DA8;
-    border-radius: 5px;
-}
-#profile-block>div{
-    width: 100%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#profile-block>div>p{
-    font-size: 20px;
-}
-#profile-block>div>button{
-    width: 50%;
-    height: 35px;
-    background-color: white;
-    color: #DA8;
-    border: none;
-    font-weight: 500;
-    font-size: 16px;
-    border-radius: 8px;
-}
-#profile-block>div>button:hover{
-    background-color: transparent;
-    border: 1px solid white;
-    color: white;
-}
-#profile-block>p{
-    font-size: 20px;
-    font-weight: 700;
-    position: absolute;
-    top: 1vh;
-    right: 5px;
-}
-#profile-block>p:hover{
-    cursor: pointer;
+/* 🔥 PROFILE BOX */
+#profile-block {
+  width: 180px;
+  height: 140px;
+  position: fixed;
+  top: 70px;
+  right: 10px;
+  background-color: #DA8;
+  border-radius: 8px;
+  z-index: 10;
 }
 
-/* FOOTER */
+#profile-block > div {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#profile-block > div > p {
+  font-size: 16px;
+}
+
+#profile-block > div > button {
+  width: 70%;
+  height: 35px;
+  background-color: white;
+  color: #DA8;
+  border: none;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+#profile-block > div > button:hover {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+#profile-block > p {
+  font-size: 18px;
+  font-weight: 700;
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  cursor: pointer;
+}
+
+/* 🔥 FOOTER */
 .footer {
   background: #DA8;
   color: white;
   text-align: center;
-  padding: 30px;
+  padding: 20px;
 }
 
-/* TABLET */
+/* ========================= */
+/* 📱 TABLET */
+/* ========================= */
 @media (max-width: 992px) {
   .grid {
-    grid-template-columns: repeat(3, 180px);
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
   }
 }
 
-/* MOBILE */
+/* ========================= */
+/* 📱 MOBILE */
+/* ========================= */
 @media (max-width: 600px) {
+  .header1 > h1 {
+    font-size: 18px;
+  }
+
+  #user {
+    font-size: 20px;
+  }
+
   .grid {
-    grid-template-columns: repeat(2, 1fr); /* 🔥 2 buttons per row */
-    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    width: 100%;
   }
 
   .home-card {
-    padding: 20px 10px;
-    font-size: 14px;
+    padding: 15px 10px;
+    font-size: 13px;
   }
 
   .home-card svg {
-    font-size: 28px;
+    font-size: 24px;
+  }
+
+  .footer {
+    font-size: 12px;
+    padding: 15px;
   }
 }
 
-/* SMALL MOBILE */
-@media (max-width: 300px) {
+/* ========================= */
+/* 📱 VERY SMALL DEVICES */
+/* ========================= */
+@media (max-width: 350px) {
   .grid {
-    grid-template-columns: 1fr; /* fallback for very small screens */
+    grid-template-columns: 1fr;
   }
-  
 }

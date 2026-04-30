@@ -60,7 +60,7 @@ const Home = () => {
           showThumbs={false}
           showStatus={false}
           showIndicators={false}
-          interval={4000}
+          interval={8000}
           swipeable={false}
         >
           <div><img src="https://images.unsplash.com/photo-1564507592333-c60657eea523" alt="Taj Mahal" /></div>
