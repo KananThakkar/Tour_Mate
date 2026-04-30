@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import "./Login.css";
 
 export const Login = () => {
+  ;
+
   const [action, setAction] = useState("Login");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -56,9 +58,11 @@ export const Login = () => {
       });
 
       const data = await res.json();
+      console.log("LOGIN RESPONSE:", data);
 
       if (res.ok) {
         localStorage.setItem("token", data.token);
+        localStorage.setItem("userfullname", data.user.fullname);
         alert("Login successful ✅");
         navigate("/home");
       } else {
@@ -80,12 +84,13 @@ export const Login = () => {
         headers: {
           "Content-Type": "application/json"
         },
-        body: JSON.stringify({ email, password })
+        body: JSON.stringify({ name, email, password })
       });
 
       const data = await res.json();
 
       if (res.ok) {
+        localStorage.setItem("userfullname", name);
         alert("Signup successful ✅");
         setAction("Login"); // switch to login
       } else {

@@ -1,10 +1,12 @@
+const Chat = require("../models/Chat");
 const express = require("express");
 const router = express.Router();
 
 router.post("/", async (req, res) => {
   try {
-    const { message } = req.body;
+    const { message, userId } = req.body;
 
+    // 🔹 Call OpenRouter AI
     const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
       method: "POST",
       headers: {
@@ -24,21 +26,46 @@ router.post("/", async (req, res) => {
 
     const data = await response.json();
 
-    console.log("FULL RESPONSE:", data);
-
-    if (data.error) {
-      return res.json({ reply: data.error.message });
-    }
-
     const reply =
       data?.choices?.[0]?.message?.content ||
+      data?.error?.message ||
       "No response from AI";
+
+    // 🔹 SAVE TO DB
+    let chat = await Chat.findOne({ userId });
+
+    if (!chat) {
+      chat = new Chat({ userId, messages: [] });
+    }
+
+    chat.messages.push({ type: "user", text: message });
+    chat.messages.push({ type: "bot", text: reply });
+
+    // limit messages
+    if (chat.messages.length > 100) {
+      chat.messages = chat.messages.slice(-100);
+    }
+
+    await chat.save();
 
     res.json({ reply });
 
   } catch (err) {
     console.log(err);
     res.status(500).json({ reply: "Server error" });
+  }
+});
+
+router.get("/:userId", async (req, res) => {
+  try {
+    const chat = await Chat.findOne({ userId: req.params.userId });
+
+    if (!chat) return res.json({ messages: [] });
+
+    res.json({ messages: chat.messages });
+
+  } catch (err) {
+    res.status(500).json({ error: err.message });
   }
 });
 

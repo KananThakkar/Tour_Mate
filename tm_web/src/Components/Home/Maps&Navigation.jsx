@@ -53,7 +53,7 @@ const MapsNavigation = () => {
 
         const query = `
 [out:json];
-node(around:1000,${userLocation.lat},${userLocation.lng})["amenity"="restaurant"];
+node(around:2000,${userLocation.lat},${userLocation.lng})["amenity"="restaurant"];
 out;
 `;
 
@@ -80,7 +80,7 @@ out;
 
         const query = `
 [out:json];
-node(around:1500,${userLocation.lat},${userLocation.lng})["tourism"];
+node(around:2000,${userLocation.lat},${userLocation.lng})["tourism"];
 out;
 `;
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Home.css";
 import { useNavigate } from "react-router-dom";
 import { Carousel } from "react-responsive-carousel";
@@ -17,6 +17,22 @@ import {
 
 const Home = () => {
   const navigate = useNavigate();
+  const [showProfile, setShowProfile] = useState(false);
+  const [username, setUsername] = useState("");
+
+  // Load username from localStorage
+  useEffect(() => {
+    const storedName = localStorage.getItem("userfullname");
+    if (storedName) {
+      setUsername(storedName);
+    }
+  }, []);
+
+  const handleLogout = () => {
+    // optionally clear storage
+    localStorage.removeItem("userfullname");
+    navigate("/");
+  };
 
   return (
     <div className="home">
@@ -24,14 +40,16 @@ const Home = () => {
       {/* HEADER (same as before) */}
       <header className="header1">
         <h1>Tour Mate</h1>
-        {/*<FaRegUser />*/}
+        <button id="user" onClick={() => setShowProfile(true)}><FaRegUser /></button>
+        {showProfile && (
         <section id="profile-block">
-          <p id="close">X</p>
-          <div id="uname"></div>
+          <p id="close" onClick={() => setShowProfile(false)}>X</p>
+          <div id="uname"><p>Hello {username}!</p></div>
           <div>
-            <button id="lbtn">Logout</button>
+            <button id="lbtn" onClick={handleLogout}>Logout</button>
           </div>
         </section>
+         )}
       </header>
 
       {/* BACKGROUND CAROUSEL */}

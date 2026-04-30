@@ -14,9 +14,23 @@ body {
 .header1 {
   background: #DA8;
   color: white;
-  text-align: center;
-  padding: 5px 0;
+  padding: 5px;
   z-index: 5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 70px;
+}
+.header1>h1{
+  padding-left: 610px;
+}
+#user{
+  cursor: pointer;
+  background-color: #DA8;
+  border: #DA8;
+  color: white;
+  font-size: 30px;
+  padding-left: 570px;
 }
 
 /* CAROUSEL BACKGROUND */
@@ -88,11 +102,10 @@ body {
     width: 200px;
     height: 150px;
     position: fixed;
-    top: 12vh;
+    top: 11vh;
     right: 0;
-    background-color: palevioletred;
-    box-shadow: 0px 0px 5px white;
-    display: none;
+    background-color: #DA8;
+    border-radius: 5px;
 }
 #profile-block>div{
     width: 100%;
@@ -105,13 +118,14 @@ body {
     font-size: 20px;
 }
 #profile-block>div>button{
-    width: 60%;
+    width: 50%;
     height: 35px;
     background-color: white;
-    color: palevioletred;
+    color: #DA8;
     border: none;
     font-weight: 500;
     font-size: 16px;
+    border-radius: 8px;
 }
 #profile-block>div>button:hover{
     background-color: transparent;

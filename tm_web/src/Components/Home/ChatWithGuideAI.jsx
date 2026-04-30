@@ -6,9 +6,23 @@ const GuideAI = () => {
   const [message, setMessage] = useState("");
   const [chat, setChat] = useState([]);
   const [loading, setLoading] = useState(false);
+  const user = localStorage.getItem("userfullname");
 
   const chatEndRef = useRef(null);
+  useEffect(() => {
+    const loadChat = async () => {
+      const user = localStorage.getItem("userfullname");
 
+      if (!user) return;
+
+      const res = await fetch(`http://localhost:5000/api/guideAI/${user}`);
+      const data = await res.json();
+
+      setChat(data.messages || []);
+    };
+
+    loadChat();
+  }, []);
   // 🔽 Auto scroll
   useEffect(() => {
     chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -28,13 +42,19 @@ const GuideAI = () => {
         headers: {
           "Content-Type": "application/json"
         },
-        body: JSON.stringify({ message })
+        body: JSON.stringify({
+          message,
+          userId: user
+        })
       });
+
 
       const data = await res.json();
 
       const botMsg = { type: "bot", text: data.reply || "No response" };
       setChat(prev => [...prev, botMsg]);
+
+
 
     } catch (err) {
       console.log(err);
