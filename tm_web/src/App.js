@@ -17,6 +17,7 @@ import Booking from './Components/Home/Booking';
 import ActivityDetails from "./Components/Home/ActivityDetails";
 import "leaflet/dist/leaflet.css";
 import Reviews from "./Components/Home/Reviews";
+import ArticleDetails from "./Components/Home/ArticleDetails";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/home/monument-detection" element={<MonumentDetection />} />
         <Route path="/home/travel-packages" element={<TravelPackages />} />
         <Route path="/home/travel-articles" element={<TravelArticles />} />
+        <Route path="/article/:id" element={<ArticleDetails/>}/>
         <Route path="/home/audio-tours" element={<AudioTours />} />
         <Route path="/home/chat-ai" element={<ChatAI />} />
         <Route path="/tour/:monumentId" element={<TourPage />} />

@@ -15,7 +15,7 @@ border-radius:8px;
 
 .search-box button{
 padding:10px 20px;
-background:#ff7a18;
+background:#DA8;
 color:white;
 border:none;
 border-radius:8px;
@@ -44,7 +44,7 @@ object-fit:cover;
 
 .card button{
 margin-top:10px;
-background:#ff7a18;
+background:#DA8;
 color:white;
 border:none;
 padding:8px 15px;
@@ -73,7 +73,7 @@ border-radius:10px;
 
 .book{
 margin-top:20px;
-background:#ff7a18;
+background:#DA8;
 color:white;
 padding:12px 20px;
 border:none;
@@ -103,7 +103,7 @@ border:1px solid #ccc;
 }
 
 .search-box button{
-background:#ff7a18;
+background:#DA8;
 color:white;
 border:none;
 padding:10px 20px;
@@ -112,7 +112,7 @@ cursor:pointer;
 }
 
 .search-box button:hover{
-background:#ff5e00;
+background:#DA8;
 }
 
 .result-grid{
@@ -124,7 +124,7 @@ gap:25px;
 }
 
 .card{
-background:#ff7a18;
+background:#DA8;
 border-radius:12px;
 overflow:hidden;
 box-shadow:0 5px 15px rgba(0,0,0,0.1);
@@ -133,7 +133,7 @@ transition:0.3s;
 
 .card:hover{
 transform:translateY(-5px);
-background:#ff7a18;
+background:#DA8;
 }
 
 .card img{
@@ -157,7 +157,7 @@ cursor:pointer;
 }
 
 .details-btn:hover{
-background:#ff5e00;
+background:#DA8;
 }
 .plan-trip-container{
 padding:40px;
@@ -180,7 +180,7 @@ border:1px solid #ccc;
 }
 
 .search-btn{
-background:#ff7a18;
+background: #DA8;
 color:white;
 border:none;
 padding:10px 20px;
@@ -189,7 +189,7 @@ cursor:pointer;
 }
 
 .search-btn:hover{
-background:#e66a0e;
+background: #DA8;
 }
 
 .popular-title{
@@ -233,7 +233,7 @@ justify-content:center;
 }
 
 .search-btn{
-background:#ff7a18;
+background:#DA8;
 color:white;
 border:none;
 padding:10px 20px;
@@ -262,7 +262,7 @@ border-radius:8px;
 }
 
 .see-more-btn{
-background:#ff7a18;
+background: #DA8;
 color:white;
 border:none;
 padding:8px 15px;

@@ -18,7 +18,7 @@ const destinations = [
   {
     id: 1,
     name: "Manali",
-    type: "mountain",
+    type: "trekking",
     image:
       "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23",
     bestTime: "October - February",
@@ -312,21 +312,46 @@ See More
 
 <div className="popular-card">
 <img src="https://images.unsplash.com/photo-1605649487212-47bdab064df7" alt="Manali"/>
+
+<Link to={`/destination/${1}`}>
+<button className="see-more-btn">
+See More
+</button>
+</Link>
 <h3>Manali</h3>
+
 </div>
 
 <div className="popular-card">  
 <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Goa"/>
+
+<Link to={`/destination/${8}`}>
+<button className="see-more-btn">
+See More
+</button>
+</Link>
 <h3>Goa</h3>
 </div>
 
 <div className="popular-card">
 <img src="https://images.unsplash.com/photo-1599661046289-e31897846e41" alt="Udaipur"/>
+
+<Link to={`/destination/${3}`}>
+<button className="see-more-btn">
+See More
+</button>
+</Link>
 <h3>Udaipur</h3>
 </div>
 
 <div className="popular-card">
 <img src={lehImg} alt="Leh Ladakh"/>
+
+<Link to={`/destination/${7}`}>
+<button className="see-more-btn">
+See More
+</button>
+</Link>
 <h3>Leh Ladakh</h3>
 </div>
 

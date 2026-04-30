@@ -78,7 +78,7 @@ color:#444;
 .confirm-btn{
 display:block;
 margin:30px auto 0;
-background:linear-gradient(45deg,#ff7a18,#ff7a18);
+background:linear-gradient(45deg,#DA8, #DA8);
 color:white;
 border:none;
 padding:14px 30px;
@@ -89,6 +89,6 @@ transition:0.3s;
 }
 
 .confirm-btn:hover{
-background:linear-gradient(45deg,#ff7a18,#ff7a18);
+background:linear-gradient(45deg,#DA8, #DA8);
 transform:scale(1.05);
 }

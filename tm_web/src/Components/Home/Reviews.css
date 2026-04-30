@@ -42,7 +42,7 @@
 
 .review-card .place {
   font-weight: bold;
-  color: #ff6600;
+  color: #DA8;
 }
 
 .review-card .stars {
@@ -89,7 +89,7 @@
 }
 
 .review-form button {
-  background: #ff6600;
+  background: #DA8;
   color: white;
   padding: 10px;
   border: none;
@@ -98,5 +98,5 @@
 }
 
 .review-form button:hover {
-  background: #e65c00;
+  background: #DA8;
 }

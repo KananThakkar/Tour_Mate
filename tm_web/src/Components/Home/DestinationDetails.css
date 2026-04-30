@@ -124,7 +124,7 @@ text-align:center;
 .hotel-card button{
 margin-top:10px;
 padding:10px 20px;
-background:#ff7a18;
+background:#DA8;
 border:none;
 color:white;
 border-radius:8px;
@@ -132,7 +132,7 @@ cursor:pointer;
 }
 
 .hotel-card button:hover{
-background:#e96b10;
+background:#DA8;
 }
 
 @media (max-width:768px){

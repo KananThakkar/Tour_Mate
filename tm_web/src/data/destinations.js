@@ -9,7 +9,12 @@ import gokaranaImg from "../Components/Assets/images/gokarana.png";
 import hampiImg from "../Components/Assets/images/hampi.png";
 import jaipurImg from "../Components/Assets/images/jaipur.png";
 import mahaImg from "../Components/Assets/images/mahabali.png";
-
+import tigerhillImg from "../Components/Assets/images/tigerhill.png";
+import jakhooImg from "../Components/Assets/images/jakhoo.png";
+import bagaImg from "../Components/Assets/images/bagha.png";
+import fortImg from "../Components/Assets/images/fort.png";
+import fort1Img from "../Components/Assets/images/fort1.png";
+import kashiImg from "../Components/Assets/images/kashi.png";
 
 const destinations = [
 
@@ -164,7 +169,7 @@ places:[
 
 {
 name:"Tiger Hill",
-image:"https://images.unsplash.com/photo-1619712253353-7d8e0e6d1e26",
+image:tigerhillImg,
 timing:"4 AM - 7 AM",
 price:"₹100",
 info:"Famous sunrise viewpoint of Kanchenjunga."
@@ -405,7 +410,7 @@ info:"Famous open space offering panoramic mountain views."
 
 {
 name:"Jakhoo Temple",
-image:"https://images.unsplash.com/photo-1614594857074-3f89cfae0a14",
+image:jakhooImg,
 timing:"6 AM - 8 PM",
 price:"Free",
 info:"Ancient temple dedicated to Lord Hanuman."
@@ -511,7 +516,7 @@ places:[
 
 {
 name:"Baga Beach",
-image:"https://images.unsplash.com/photo-1590523741831-ab7e8b833b92",
+image:bagaImg,
 timing:"Open All Day",
 price:"Free",
 info:"Popular beach famous for nightlife."
@@ -519,7 +524,7 @@ info:"Popular beach famous for nightlife."
 
 {
 name:"Fort Aguada",
-image:"https://images.unsplash.com/photo-1591012911207-0dbacdf0c8a7",
+image:fortImg,
 timing:"9 AM - 6 PM",
 price:"₹50",
 info:"Historic Portuguese fort overlooking the sea."
@@ -633,7 +638,7 @@ info:"Historic fort with stunning architecture."
 
 {
 name:"Hawa Mahal",
-image:"https://images.unsplash.com/photo-1599661046827-dacde6976545",
+image:jaipurImg,
 timing:"9 AM - 4:30 PM",
 price:"₹50",
 info:"Famous palace with 953 windows."
@@ -691,7 +696,7 @@ info:"Famous for evening Ganga Aarti."
 
 {
 name:"Kashi Vishwanath Temple",
-image:"https://images.unsplash.com/photo-1588413335653-94b37c9b84a7",
+image:kashiImg,
 timing:"3 AM - 11 PM",
 price:"Free",
 info:"One of the most sacred Shiva temples."
@@ -1038,7 +1043,7 @@ info:"Famous tiger reserve with jeep safaris."
 
 {
 name:"Ranthambore Fort",
-image:"https://images.unsplash.com/photo-1599661046827-dacde6976545",
+image:fort1Img,
 timing:"6 AM - 6 PM",
 price:"₹50",
 info:"Historic fort inside the national park."
