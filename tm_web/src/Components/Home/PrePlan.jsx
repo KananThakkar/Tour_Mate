@@ -12,7 +12,7 @@ import gokaranaImg from "../Assets/images/gokarana.png";
 import hampiImg from "../Assets/images/hampi.png";
 import jaipurImg from "../Assets/images/jaipur.png";
 import mahaImg from "../Assets/images/mahabali.png";
-
+import rishi from "../Assets/images/rishi.png";
 
 const destinations = [
   {
@@ -49,7 +49,7 @@ const destinations = [
     name: "Rishikesh",
     type: "adventure",
     image:
-      "https://images.unsplash.com/photo-1598091383021-15ddea10925d",
+      rishi,
     bestTime: "September - April",
     days: 3,
     budget: "₹9000",
